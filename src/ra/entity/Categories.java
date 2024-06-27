@@ -74,12 +74,12 @@ public class Categories implements ICategories {
 
 
     public int inputCatalogId(List<Categories> categoriesList) {
-        int indexMax = 0;
+
       if (categoriesList.isEmpty()){
           return 1;
       }else {
           for (int i = 0; i < categoriesList.size(); i++) {
-             indexMax = categoriesList.get(0).getCatalogId();
+             int indexMax = categoriesList.get(0).getCatalogId();
              if (indexMax > categoriesList.get(i).getCatalogId()) {
                  indexMax = categoriesList.get(i).getCatalogId();
                  break;
